@@ -3,6 +3,7 @@ import {
   useGetGeonameQuery,
   useGetPlacesRadiusQuery,
 } from "../../../../store/tripmap/tripmap.api";
+import Card from "./Card";
 import styles from "./cards.module.scss";
 
 const Cards = () => {
@@ -13,12 +14,14 @@ const Cards = () => {
     lat: data?.lat,
     lon: data?.lon,
   });
-  console.log(places);
+
+  console.log(places)
+
   return (
     <div className={styles.cards}>
-      <div className={styles.card}>Hii</div>
-      <div className={styles.card}>Hiiii</div>
-      <div className={styles.card}>Hiiii</div>
+      {places?.map((place) => (
+        <Card key={place.xid} name={place.name} kinds={place.kinds} id={place.xid} />
+      ))}
     </div>
   );
 };

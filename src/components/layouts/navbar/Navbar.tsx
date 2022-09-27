@@ -10,8 +10,8 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <div>
-      <ul className={styles.navbar}>
+    <nav className={styles.navbar}>
+      <ul>
         <li className={router.pathname == "/" ? styles.active : ""}>
           <Link href="/" >
             <a>
@@ -30,7 +30,7 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 

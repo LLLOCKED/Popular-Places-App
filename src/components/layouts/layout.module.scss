@@ -1,14 +1,14 @@
-$mobile: 400px;
+$mobile: 480px;
 
 .screen {
-    max-width: $mobile;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #0a1317;
-    color: rgb(195, 195, 195) ;
+  max-width: $mobile;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0a1317;
+  color: rgb(195, 195, 195);
 }
 
 .main {

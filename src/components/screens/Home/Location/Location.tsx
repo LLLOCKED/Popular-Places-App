@@ -15,7 +15,7 @@ const Location: FC = () => {
         return response.json();
       })
       .then(function (payload) {
-        setLocation(payload.location.city.name);
+        setLocation(payload.location.city);
       })
       .catch((err) => setLocation("Kiev"));
   }, []);
