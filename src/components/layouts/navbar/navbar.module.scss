@@ -1,0 +1,37 @@
+$bg: #0a1317;
+$fg: rgb(195, 195, 195);
+
+.navbar {
+     display: flex;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $fg;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 15px;
+
+    li {
+        width: 100%;
+        text-align: center;
+        color: $bg;
+        padding: 10px 15px;
+        border-radius: 15px;
+        font-size: 15px;
+        &.active {
+            background-color: $bg;
+            color: $fg;
+        }
+        a{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        svg{
+          width: 25px;
+          height: 25px;
+        } 
+    }
+}

@@ -1,0 +1,30 @@
+.places{
+  margin: 15px 0 ;
+  overflow-x: auto;
+  white-space: nowrap;
+  
+  &::-webkit-scrollbar{
+    display: none;
+  }
+
+
+  .list_places{
+    display: flex;
+    margin-left: 15px;
+  }
+
+  .item_place{
+    margin-right: 10px;
+    background-color: #192225;
+    color: #666D6F;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 15px;  
+    cursor: pointer;
+    font-size: 14px;
+    &:hover{
+      background-color: #253135;
+    }
+  }
+
+}

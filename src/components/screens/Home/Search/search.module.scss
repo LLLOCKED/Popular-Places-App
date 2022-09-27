@@ -1,0 +1,29 @@
+.search{
+  margin: 0 15px;
+
+
+  .form_search{
+    width: 100%;
+    position: relative;
+  }
+
+  .input_search{
+    width: 100%;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+  }
+
+  .icon_search{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    margin-left: 5px;
+  }
+
+}
+

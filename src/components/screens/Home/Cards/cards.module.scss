@@ -1,0 +1,30 @@
+.cards{
+    display: flex;
+    width: 100%;
+    //height: 350px;
+    flex:1 0 auto;
+    scroll-snap-type: x mandatory;
+    overflow: auto;
+    column-gap: 15px;
+    margin-bottom: 15px;
+
+    &::-webkit-scrollbar{
+        display: none;
+      }
+}
+
+.card{
+    scroll-snap-align: center;
+    flex: none;
+    width: 85%;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+    &:first-child{
+        margin-left: 15px;
+    }
+    &:last-child{
+        margin-right: 15px;
+    }
+}

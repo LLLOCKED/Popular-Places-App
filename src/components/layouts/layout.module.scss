@@ -1,0 +1,18 @@
+$mobile: 400px;
+
+.screen {
+    max-width: $mobile;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0a1317;
+    color: rgb(195, 195, 195) ;
+}
+
+.main {
+  height: calc(100% - 60px);
+  display: flex;
+  flex-direction: column;
+}
