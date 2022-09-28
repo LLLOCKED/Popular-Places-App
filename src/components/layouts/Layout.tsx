@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
-import layout from "./layout.module.scss";
-import Navbar from "./navbar/Navbar";
+import { ReactNode } from 'react';
+import layout from './layout.module.scss';
+import Navbar from './navbar/Navbar';
 
 type LayoutProps = {
   children: ReactNode;

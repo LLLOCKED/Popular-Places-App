@@ -1,4 +1,5 @@
 $mobile: 480px;
+$navbarHeight: 70px;
 
 .screen {
   max-width: $mobile;
@@ -12,7 +13,7 @@ $mobile: 480px;
 }
 
 .main {
-  height: calc(100% - 60px);
+  height: calc(100% - $navbarHeight);
   display: flex;
   flex-direction: column;
 }

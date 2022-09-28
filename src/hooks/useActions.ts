@@ -1,13 +1,15 @@
-import { bindActionCreators } from "@reduxjs/toolkit";
-import { useDispatch } from "react-redux";
-import {locationActions} from "../store/location/locationSlice"
+import { bindActionCreators } from '@reduxjs/toolkit';
+import { useDispatch } from 'react-redux';
+import { locationActions } from '../store/location/locationSlice';
 
 const allActions = {
-    ...locationActions
-}
+  ...locationActions
+};
 
-export const useActions = () => {
-    const dispatch = useDispatch()
+const useActions = () => {
+  const dispatch = useDispatch();
 
-    return bindActionCreators(allActions, dispatch)
-}
+  return bindActionCreators(allActions, dispatch);
+};
+
+export default useActions;

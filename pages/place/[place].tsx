@@ -1,7 +1,7 @@
-import Place from "../../src/components/screens/Place/Place";
+import Place from '../../src/components/screens/Place/Place';
 
 const PlacePage = () => {
-  return (<Place />)
-}
+  return <Place />;
+};
 
 export default PlacePage;

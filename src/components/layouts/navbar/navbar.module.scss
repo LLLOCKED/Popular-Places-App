@@ -2,8 +2,10 @@ $bg: #0a1317;
 $fg: rgb(195, 195, 195);
 
 .navbar {
+  display: flex;
+  align-items: center;
   z-index: 100;
-  height: 60px;
+  height: 70px;
   background-color: $fg;
   position: fixed;
   bottom: 0;

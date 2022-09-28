@@ -1,5 +1,5 @@
-import Link from "next/link";
-import styles from "./cards.module.scss";
+import Link from 'next/link';
+import styles from './cards.module.scss';
 
 type TCard = {
   name: string;
@@ -8,9 +8,9 @@ type TCard = {
 };
 
 const splitKinds = (kinds: string) => {
-  const arr = kinds.split(",");
+  const arr = kinds.split(',');
   const upperArr = arr.map((kind) => {
-    const repKind = kind.replace(/_/g, " ");
+    const repKind = kind.replace(/_/g, ' ');
     return repKind.charAt(0).toUpperCase() + repKind.slice(1);
   });
   return upperArr;
@@ -24,9 +24,9 @@ const Card = ({ name, kinds, id }: TCard) => {
       <div className={styles.card}>
         <h2>{name}</h2>
         <div className={styles.kinds}>
-          {arrKinds.map((kind) => (
-            <span key={kind}>{kind}</span>
-          ))}
+          {arrKinds.map((kind) => {
+            return <span key={kind}>{kind}</span>;
+          })}
         </div>
       </div>
     </Link>

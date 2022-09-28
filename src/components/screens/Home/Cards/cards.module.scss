@@ -1,19 +1,19 @@
-.cards{
+.cards {
     display: flex;
     align-items: center;
     width: 100%;
-    flex:1 0 auto;
+    flex: 1 0 auto;
     scroll-snap-type: x mandatory;
     overflow: auto;
     column-gap: 15px;
     margin-bottom: 15px;
 
-    &::-webkit-scrollbar{
+    &::-webkit-scrollbar {
         display: none;
-      }
+    }
 }
 
-.card{
+.card {
     height: 95%;
     scroll-snap-align: center;
     flex: none;
@@ -25,35 +25,37 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
     cursor: pointer;
 
-    h2{
+    h2 {
+        text-align: center;
         margin-bottom: 10px;
     }
 
-    .kinds{
+    .kinds {
         display: flex;
-        flex-direction: column;
-        span{
+        flex-wrap: wrap;
+        row-gap: 5px;
+        column-gap: 5px;
+
+        span {
             background-color: rgb(37, 44, 56);
             padding: 5px 10px;
-            margin-bottom: 5px;
             border-radius: 15px;
             color: rgb(245, 245, 245);
         }
     }
 
-    &:hover{
+    &:hover {
         background-color: rgb(233, 233, 233);
         transform: scale(1.02);
     }
 
-    &:first-child{
+    &:first-child {
         margin-left: 15px;
     }
-    &:last-child{
+
+    &:last-child {
         margin-right: 15px;
     }
 }

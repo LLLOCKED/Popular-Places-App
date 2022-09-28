@@ -1,0 +1,36 @@
+$fg: black;
+
+.about {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+    color: $fg;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .contact {
+        width: 100%;
+
+        button {
+            margin-top: 10px;
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 15px 0;
+            font-size: 16px;
+            font-weight: bold;
+
+            &:hover {
+                background-color: rgb(219, 219, 219);
+            }
+        }
+    }
+}
