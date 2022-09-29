@@ -4,14 +4,16 @@ import Card from './Card';
 import styles from './cards.module.scss';
 
 const Cards = () => {
-  const { location } = useTypedSelector((state) => {
+  const { location, category } = useTypedSelector((state) => {
     return state;
   });
-  const { data } = useGetGeonameQuery(location.value);
+
+  const { data } = useGetGeonameQuery(location.value, { skip: location.value.length < 3 });
   const { data: places } = useGetPlacesRadiusQuery({
     limit: 10,
     lat: data?.lat,
-    lon: data?.lon
+    lon: data?.lon,
+    kinds: category.value
   });
 
   return (

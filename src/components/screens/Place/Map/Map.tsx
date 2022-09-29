@@ -1,5 +1,6 @@
 import GoogleMapReact from 'google-map-react';
 import { ImLocation2 } from 'react-icons/im';
+import styles from './map.module.scss';
 
 interface MapParams {
   lat?: number;
@@ -9,14 +10,7 @@ interface MapParams {
 // eslint-disable-next-line no-empty-pattern, react/no-unused-prop-types
 function Marker({}: { lat: number; lng: number }) {
   return (
-    <div
-      style={{
-        position: 'absolute',
-        transform: 'translate(-50%, -50%)',
-        color: 'red',
-        fontSize: '20px'
-      }}
-    >
+    <div className={styles.marker}>
       <ImLocation2 />
     </div>
   );
@@ -24,7 +18,7 @@ function Marker({}: { lat: number; lng: number }) {
 
 function Map({ lat, lng }: MapParams) {
   return (
-    <div style={{ width: '100%', height: '400px' }}>
+    <div className={styles.map_container}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: String(process.env.MAP_KEY) }}
         defaultCenter={{

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-prototype-builtins */
 import Image from 'next/image';
 import Link from 'next/link';
@@ -20,7 +21,9 @@ const Place = () => {
       {isLoading && <div>Loading...</div>}
       <div className={styles.place}>
         <Link href='/'>
-          <IoIosArrowBack className={styles.back} />
+          <a className={styles.back}>
+            <IoIosArrowBack />
+          </a>
         </Link>
 
         {data?.preview && (
@@ -34,7 +37,7 @@ const Place = () => {
             <GoLocation style={{ color: 'red' }} />
             {data?.address.country}
             {data?.address.hasOwnProperty('city') && `, ${data?.address.city}`}
-            {data?.address.hasOwnProperty('county') && `, ${data?.address.county}`}
+            {data?.address.hasOwnProperty('count') && `, ${data?.address.county}`}
             {data?.address.hasOwnProperty('pedestrian') ? `, ${data?.address.pedestrian}` : `, ${data?.address.road}`}
           </span>
           <p>{data?.wikipedia_extracts.text}</p>

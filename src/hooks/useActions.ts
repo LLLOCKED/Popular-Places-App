@@ -1,9 +1,11 @@
 import { bindActionCreators } from '@reduxjs/toolkit';
 import { useDispatch } from 'react-redux';
 import { locationActions } from '../store/location/locationSlice';
+import { placesCategoryActions } from '../store/placesCategory/placesCategorySlice';
 
 const allActions = {
-  ...locationActions
+  ...locationActions,
+  ...placesCategoryActions
 };
 
 const useActions = () => {
