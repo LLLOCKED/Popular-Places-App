@@ -35,6 +35,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-.prettierrc
-.eslintrc.json
-.next.config.js
+./next.config.js
